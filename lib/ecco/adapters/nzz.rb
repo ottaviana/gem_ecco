@@ -7,6 +7,7 @@ module Ecco
 
     def data
       SiteData.new(
+        newspaper: "Neue Bürcher Zeitung",
         headline: article_block.css('.title__name').inner_text,
         description: article_block.css('.teaser__lead').inner_text,
         link: URI.parse(root_uri + article_block.css('.teaser__link').first.attr('href')),

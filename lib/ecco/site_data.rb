@@ -1,7 +1,7 @@
 module Ecco
   # JOB: Represent Site Data that we need.
   class SiteData
-    attr_reader :headline, :description, :link, :image_url
+    attr_reader :headline, :description, :link, :image_url, :newspaper
 
     def initialize(args)
       @headline     = args[:headline]

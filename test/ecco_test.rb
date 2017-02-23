@@ -10,6 +10,7 @@ module Ecco
       crawler = Crawler.new(:lemonde)
       site_data = crawler.crawl
 
+      assert_equal "Le Monde", site_data.newspaper
       assert_kind_of Ecco::SiteData, site_data
       assert_kind_of String, site_data.headline
       assert_kind_of String, site_data.description
@@ -21,6 +22,7 @@ module Ecco
       crawler = Crawler.new(:nzz)
       site_data = crawler.crawl
 
+      assert_equal "Neue Bürcher Zeitung", site_data.newspaper
       assert_kind_of Ecco::SiteData, site_data
       assert_kind_of String, site_data.headline
       assert_kind_of String, site_data.description
@@ -32,6 +34,7 @@ module Ecco
       crawler = Crawler.new(:repubblica)
       site_data = crawler.crawl
 
+      assert_equal "Repubblica", site_data.newspaper
       assert_kind_of Ecco::SiteData, site_data
       assert_kind_of String, site_data.headline
       assert_kind_of String, site_data.description
@@ -43,7 +46,8 @@ module Ecco
       crawler = Crawler.new(:dailymail)
       site_data = crawler.crawl
 
-      assert_kind_of Ecco::SiteData, site_data
+      assert_equal "The Daily Mail", site_data.newspaper
+      assert_kind_of Ecco::SiteData, site_data.news
       assert_kind_of String, site_data.headline
       assert_kind_of String, site_data.description
       assert_kind_of URI, site_data.link
@@ -54,6 +58,7 @@ module Ecco
       crawler = Crawler.new(:nyt)
       site_data = crawler.crawl
 
+      assert_equal "New York Times", site_data.newspaper
       assert_kind_of Ecco::SiteData, site_data
       assert_kind_of String, site_data.headline
       assert_kind_of String, site_data.description
@@ -66,6 +71,7 @@ module Ecco
       crawler = Crawler.new(:elpais)
       site_data = crawler.crawl
 
+      assert_equal "El País", site_data.newspaper
       assert_kind_of Ecco::SiteData, site_data
       assert_kind_of String, site_data.headline
       assert_kind_of String, site_data.description
@@ -77,6 +83,7 @@ module Ecco
       crawler = Crawler.new(:guardian)
       site_data = crawler.crawl
 
+      assert_equal "The Guardian", site_data.newspaper
       assert_kind_of Ecco::SiteData, site_data
       assert_kind_of String, site_data.headline
       assert_kind_of String, site_data.description
