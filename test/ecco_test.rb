@@ -22,7 +22,7 @@ module Ecco
       crawler = Crawler.new(:nzz)
       site_data = crawler.crawl
 
-      assert_equal "Neue Bürcher Zeitung", site_data.newspaper
+      assert_equal "Neue Zürcher Zeitung", site_data.newspaper
       assert_kind_of Ecco::SiteData, site_data
       assert_kind_of String, site_data.headline
       assert_kind_of String, site_data.description
@@ -47,7 +47,7 @@ module Ecco
       site_data = crawler.crawl
 
       assert_equal "The Daily Mail", site_data.newspaper
-      assert_kind_of Ecco::SiteData, site_data.news
+      assert_kind_of Ecco::SiteData, site_data
       assert_kind_of String, site_data.headline
       assert_kind_of String, site_data.description
       assert_kind_of URI, site_data.link

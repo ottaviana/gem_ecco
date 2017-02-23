@@ -4,6 +4,7 @@ module Ecco
     attr_reader :headline, :description, :link, :image_url, :newspaper
 
     def initialize(args)
+      @newspaper    = args[:newspaper]
       @headline     = args[:headline]
       @description  = args[:description]
       @link         = args[:link]
