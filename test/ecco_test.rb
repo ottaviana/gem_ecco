@@ -52,6 +52,7 @@ module Ecco
       assert_kind_of String, site_data.description
       assert_kind_of URI, site_data.link
       assert_kind_of URI, site_data.image_url
+      assert_kind_of String, site_data.article
     end
 
     def test_nyt
