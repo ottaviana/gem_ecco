@@ -3,7 +3,6 @@ module Ecco
     def initialize
       @root_uri = 'http://www.lemonde.fr'
       @article_block = get_html(root_uri).css('.titre_une')
-      binding.pry
       @article_url = "http://www.lemonde.fr" + article_block.css('a').first.attr('href')
       @full_article_page = get_html(article_url)
     end
