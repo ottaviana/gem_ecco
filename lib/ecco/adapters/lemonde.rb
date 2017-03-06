@@ -11,7 +11,7 @@ module Ecco
     def data
       SiteData.new(
         newspaper: "Le Monde",
-        headline: article_block.css('a > h1 > text()').first,
+        headline: article_block.css('a > h1 > text()').first.inner_text,
         description: article_block.css('.description').inner_text,
         link: URI.parse(root_uri + article_block.css('a').first.attr('href')),
         image_url: URI.parse(article_block.css('img').first.attr('src')),
