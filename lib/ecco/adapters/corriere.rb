@@ -14,7 +14,7 @@ module Ecco
         headline: article_block.css('.title_art').inner_text,
         description: article_block.css(".mbl_summaryLink").inner_text,
         link: URI.parse(article_url),
-        image_url: URI.parse(article_block.css('figure img').first.attr('src')),
+        image_url: URI.parse(full_article_page.css("div > img").first.attr('data-original')),
         article: full_article_page.css("div[itemprop=articleBody]").text
       )
     end
