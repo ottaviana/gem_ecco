@@ -10,7 +10,7 @@ module Ecco
 
     def data
       return SiteData.new(
-        newspaper: "The Asahi Shimbun ",
+        newspaper: "The Asahi Shimbun",
         headline: article_block.css('.EnTopHeadline').inner_text,
         description: article_block.css(".Lead").inner_text,
         link: URI.parse(article_url),
