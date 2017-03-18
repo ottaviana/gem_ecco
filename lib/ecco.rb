@@ -13,6 +13,7 @@ require 'ecco/adapters/daily_mail.rb'
 require 'ecco/adapters/elpais.rb'
 require 'ecco/adapters/nyt.rb'
 require 'ecco/adapters/corriere.rb'
+require 'ecco/adapters/asahi.rb'
 
 module Ecco
   # Your code goes here...

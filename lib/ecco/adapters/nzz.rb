@@ -5,6 +5,7 @@ module Ecco
       @article_block = get_html(root_uri).css('.teaser--medium').first
       @article_url = "https://www.nzz.ch" + article_block.css('.teaser__link').first.attr('href')
       @full_article_page = get_html(article_url)
+      binding.pry
     end
 
     def data
