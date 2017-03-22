@@ -6,7 +6,6 @@ module Ecco
       @article_block = get_html(root_uri).css('.gamma')
       @article_url = "http://www.dailymail.co.uk/" + article_block.css('.article a').first.attr('href')
       @full_article_page = get_html(article_url)
-      binding.pry
     end
 
     # def article
