@@ -22,7 +22,8 @@ module Ecco
         link: URI.parse("http://www.dailymail.co.uk/" + article_block.css('.article a').first.attr('href')),
         image_url: URI.parse(article_block.css('.article img').first.attr('data-src')),
         #article: full_article_page.css("div[itemprop=articleBody] > p").text
-        article: full_article_page.xpath("//div/p").collect {|node| node.text.strip}
+        #article: full_article_page.xpath("//div/p").collect {|node| node.text.strip}
+        article: full_article_page.css("div[itemprop=articleBody] > p").map { |n| "<p>" + n.text.strip() + "</p>" }.join
       )
     end
   end
