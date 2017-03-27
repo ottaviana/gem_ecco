@@ -3,7 +3,8 @@ module Ecco
     def initialize
       @root_uri = 'http://www.corriere.it/'
       @page = get_html(root_uri)
-      @article_block = @page.css(".md_ap_monstre")
+      @article_block = @page.css(".md_ap_sp2")
+      #@article_block = @page.css(".content_bk")
       @article_url = article_block.css("article a").first.attr('href')
       @full_article_page = get_html(article_url)
     end

@@ -14,7 +14,9 @@ module Ecco
         description: article_block.css('.teaser__lead').inner_text,
         link: URI.parse(root_uri + article_block.css('.teaser__link').first.attr('href')),
         image_url: URI.parse(article_block.css('img').attr('data-srcset').value.slice!(/http[^\s]{1,}.jpeg/)),
-        article: full_article_page.css('p[itemprop="articleBody"]').text
+        #article: full_article_page.css('p[itemprop="articleBody"]').collect {|node| node.text.strip}
+        article: full_article_page.css('p[itemprop="articleBody"]').map { |n| "<p>" + n.text.strip() + "</p>" }.join
+
       )
     end
   end
