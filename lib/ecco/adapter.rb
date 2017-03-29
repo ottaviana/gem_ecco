@@ -8,7 +8,7 @@ module Ecco
     def get_html(url)
       downloader = Curl.get(url) do |curl|
         curl.follow_location = true
-    end
+      end
       html_body = downloader.body_str
       Nokogiri::HTML(html_body)
     end
