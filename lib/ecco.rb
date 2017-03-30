@@ -14,6 +14,7 @@ require 'ecco/adapters/elpais.rb'
 require 'ecco/adapters/nyt.rb'
 require 'ecco/adapters/corriere.rb'
 require 'ecco/adapters/asahi.rb'
+require 'ecco/adapters/faz.rb'
 
 module Ecco
   # Your code goes here...
