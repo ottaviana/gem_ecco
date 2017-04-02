@@ -14,7 +14,7 @@ module Ecco
         headline: article_block.css('.Headline').inner_text,
         description: article_block.css('.TeaserText').inner_text,
         link: URI.parse(article_url),
-        image_url: URI.parsearticle_block.css('img').first.attr('data-src')),
+        image_url: URI.parse(article_block.css('img').first.attr('data-src')),
         #article: full_article_page.css('p[itemprop="articleBody"]').collect {|node| node.text.strip}
         article: full_article_page.css("div > p").text
 
