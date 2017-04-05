@@ -5,13 +5,13 @@ module Ecco
       @article_block = get_html(root_uri).css('.nmt-item__inner')
       @article_url = "https://www.nrc.nl/" + article_block.css("a").first.attr('href')
       @full_article_page = get_html(article_url)
-  
+
 
     end
 
     def data
       return SiteData.new(
-        newspaper: "The Asahi Shimbun",
+        newspaper: "NRC",
         headline: article_block.css('.nmt-item__headline')[0].inner_text,
         description: article_block.css(".nmt-item__teaser")[0].inner_text,
         link: URI.parse(article_url),
