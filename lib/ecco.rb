@@ -17,6 +17,7 @@ require 'ecco/adapters/asahi.rb'
 require 'ecco/adapters/faz.rb'
 require 'ecco/adapters/nrc.rb'
 require 'ecco/adapters/kommersant.rb'
+require 'ecco/adapters/dagens_nyheter.rb'
 
 module Ecco
   # Your code goes here...
