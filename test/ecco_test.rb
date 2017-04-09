@@ -149,7 +149,7 @@ module Ecco
       assert_kind_of String, site_data.article
     end
 
-    def test_dagensnyheter
+    def test_dagens_nyheter
       crawler = Crawler.new(:dagen)
       site_data = crawler.crawl
 
