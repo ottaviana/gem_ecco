@@ -150,7 +150,7 @@ module Ecco
     end
 
     def test_dagens_nyheter
-      crawler = Crawler.new(:dagen)
+      crawler = Crawler.new(:dagensnyheter)
       site_data = crawler.crawl
 
       assert_equal "Dagens Nyheter", site_data.newspaper
