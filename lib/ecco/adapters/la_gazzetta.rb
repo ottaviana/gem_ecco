@@ -12,11 +12,11 @@ module Ecco
     def data
       return SiteData.new(
         newspaper: "La Gazzetta dello sport",
-        headline: article_block.css('.EnTopHeadline').inner_text,
-        description: article_block.css(".Lead").inner_text,
+        headline: article_block.css('a').first.attr('title'),
+        description: article_block.css("div > h3").inner_text,
         link: URI.parse(article_url),
         image_url: URI.parse(article_block.css('img').first.attr('src')),
-        article: full_article_page.css("div > p").map { |n| "<p>" + n.text.strip() + "</p>" }.join
+        article: full_article_page.css(".desc-article").map { |n| "<p>" + n.text.strip() + "</p>" }.join
       )
     end
   end
