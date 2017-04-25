@@ -5,8 +5,6 @@ module Ecco
       @article_block = get_html(root_uri).css('.u011-opener-article-column')
       @article_url = article_block.css("a").first.attr('href')
       @full_article_page = get_html(article_url)
-      binding.pry
-
     end
 
     def data
