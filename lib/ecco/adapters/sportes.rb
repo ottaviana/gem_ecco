@@ -1,5 +1,5 @@
 module Ecco
-  class SportAdapter < Adapter
+  class SportesAdapter < Adapter
     def initialize
       @root_uri = 'http://www.sport.es/es/'
       @article_block = get_html(root_uri).css("article[class='sp-noticia media']")
