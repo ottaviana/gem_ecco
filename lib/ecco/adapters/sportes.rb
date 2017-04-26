@@ -10,7 +10,7 @@ module Ecco
     def data
       return SiteData.new(
         newspaper: "SPORT",
-        headline: article_block.css('h1').map { |n| "<a>" + n.text.strip() + "</a>" }.join,
+        headline: article_block.css('h2').first.text,
         description: full_article_page.css('.subtitle').inner_text,
         link: URI.parse(article_url),
         image_url: URI.parse(article_block.css('img').first.attr('src')),
