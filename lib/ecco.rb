@@ -19,6 +19,7 @@ require 'ecco/adapters/nrc.rb'
 require 'ecco/adapters/kommersant.rb'
 require 'ecco/adapters/dagens_nyheter.rb'
 require 'ecco/adapters/la_gazzetta.rb'
+require 'ecco/adapters/equipe.rb'
 
 module Ecco
   # Your code goes here...
