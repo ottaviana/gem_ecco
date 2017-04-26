@@ -21,6 +21,7 @@ require 'ecco/adapters/dagens_nyheter.rb'
 require 'ecco/adapters/la_gazzetta.rb'
 require 'ecco/adapters/equipe.rb'
 require 'ecco/adapters/sportes.rb'
+require 'ecco/adapters/aftenposten.rb'
 
 module Ecco
   # Your code goes here...
