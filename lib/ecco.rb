@@ -20,6 +20,7 @@ require 'ecco/adapters/kommersant.rb'
 require 'ecco/adapters/dagens_nyheter.rb'
 require 'ecco/adapters/la_gazzetta.rb'
 require 'ecco/adapters/equipe.rb'
+require 'ecco/adapters/sportes.rb'
 
 module Ecco
   # Your code goes here...
