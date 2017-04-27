@@ -23,6 +23,7 @@ require 'ecco/adapters/equipe.rb'
 require 'ecco/adapters/sportes.rb'
 require 'ecco/adapters/aftenposten.rb'
 require 'ecco/adapters/cumhuriyet.rb'
+require 'ecco/adapters/independent.rb'
 
 module Ecco
   # Your code goes here...
