@@ -9,7 +9,7 @@ module Ecco
 
     def data
       return SiteData.new(
-        newspaper: "Finalcial Times",
+        newspaper: "Financial Times",
         headline: article_block.css("a[class=js-teaser-heading-link]").first.text,
         description: article_block.css("p[class=o-teaser__standfirst]").first.text,
         link: URI.parse(article_url),
