@@ -1,5 +1,5 @@
 module Ecco
-  class FinalcialtimesAdapter < Adapter
+  class FinancialtimesAdapter < Adapter
     def initialize
       @root_uri = 'https://www.ft.com/'
       @article_block = get_html(root_uri).css('.o-teaser__content')
