@@ -18,3 +18,4 @@ module Ecco
       )
     end
   end
+end
