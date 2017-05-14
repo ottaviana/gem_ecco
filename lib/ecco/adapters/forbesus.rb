@@ -5,9 +5,9 @@ module Ecco
       @root_uri = 'https://www.forbes.com/home_usa/#3a287558324b'
       @article_block = get_html(root_uri).css("head > script")[4].text
       @article_json = article_block[39..-63]
-      @object = JSON.parse(article_json)
+      @object = JSON.parse(@article_json)
       @article_object = object["homepage-usa_58d4014b6b1c8"]["contentPositions"][0]
-      @full_article_page = get_html(article_url) 
+      @full_article_page = get_html(article_url)
         #full article to do scraping json
     end
 
