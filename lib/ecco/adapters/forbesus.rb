@@ -7,7 +7,7 @@ module Ecco
       @article_json = article_block[39..-63]
       @object = JSON.parse(@article_json)
       @article_object = @object["homepage-usa_58d4014b6b1c8"]["contentPositions"][0]
-      @full_article_page = get_html(article_url)
+      @full_article_page = get_html(@article_object["uri"])
         #full article to do scraping json
     end
 
@@ -18,7 +18,7 @@ module Ecco
         description: @article_object["description"],
         link: URI.parse(@article_object["uri"]),
         image_url: URI.parse(@article_object["image"]),
-        article: full_article_page.css(".content__article-body").text
+        article: "to do" #full_article_page.css(".content__article-body").text
       )
     end
   end
