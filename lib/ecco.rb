@@ -28,6 +28,7 @@ require 'ecco/adapters/ilsole.rb'
 require 'ecco/adapters/wienerzeitung.rb'
 require 'ecco/adapters/financialtimes.rb'
 require 'ecco/adapters/bloomberg.rb'
+require 'ecco/adapters/forbesus.rb'
 
 module Ecco
   # Your code goes here...
