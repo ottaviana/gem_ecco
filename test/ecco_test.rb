@@ -304,5 +304,18 @@ module Ecco
       assert_kind_of URI, site_data.image_url
       assert_kind_of String, site_data.article
     end
+
+    def test_forbeseurope
+      crawler = Crawler.new(:forbeseurope)
+      site_data = crawler.crawl
+
+      assert_equal "Forbes EU", site_data.newspaper
+      assert_kind_of Ecco::SiteData, site_data
+      assert_kind_of String, site_data.headline
+      assert_kind_of String, site_data.description
+      assert_kind_of URI, site_data.link
+      assert_kind_of URI, site_data.image_url
+      assert_kind_of String, site_data.article
+    end
   end
 end
