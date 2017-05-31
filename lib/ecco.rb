@@ -32,6 +32,7 @@ require 'ecco/adapters/forbesus.rb'
 require 'ecco/adapters/forbeseurope.rb'
 require 'ecco/adapters/protothema.rb'
 require 'ecco/adapters/dn.rb'
+require 'ecco/adapters/morocco.rb'
 
 module Ecco
   # Your code goes here...
