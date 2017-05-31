@@ -319,10 +319,10 @@ module Ecco
     end
 
     def test_photothema
-      crawler = Crawler.new(:photothema)
+      crawler = Crawler.new(:protothema)
       site_data = crawler.crawl
 
-      assert_equal "Photothema", site_data.newspaper
+      assert_equal "Protothema", site_data.newspaper
       assert_kind_of Ecco::SiteData, site_data
       assert_kind_of String, site_data.headline
       assert_kind_of String, site_data.description
