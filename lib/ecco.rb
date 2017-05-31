@@ -30,6 +30,7 @@ require 'ecco/adapters/financialtimes.rb'
 require 'ecco/adapters/bloomberg.rb'
 require 'ecco/adapters/forbesus.rb'
 require 'ecco/adapters/forbeseurope.rb'
+require 'ecco/adapters/photothema.rb'
 
 module Ecco
   # Your code goes here...
