@@ -318,7 +318,7 @@ module Ecco
       assert_kind_of String, site_data.article
     end
 
-    def test_photothema
+    def test_protothema
       crawler = Crawler.new(:protothema)
       site_data = crawler.crawl
 
