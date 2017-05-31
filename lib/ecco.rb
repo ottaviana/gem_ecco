@@ -31,6 +31,7 @@ require 'ecco/adapters/bloomberg.rb'
 require 'ecco/adapters/forbesus.rb'
 require 'ecco/adapters/forbeseurope.rb'
 require 'ecco/adapters/protothema.rb'
+require 'ecco/adapters/dn.rb'
 
 module Ecco
   # Your code goes here...
