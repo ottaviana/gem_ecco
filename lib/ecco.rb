@@ -33,6 +33,17 @@ require 'ecco/adapters/forbeseurope.rb'
 require 'ecco/adapters/protothema.rb'
 require 'ecco/adapters/dn.rb'
 require 'ecco/adapters/morocco.rb'
+require 'ecco/adapters/berlingske.rb'
+require 'ecco/adapters/fakt.rb'
+require 'ecco/adapters/adevarul.rb'
+require 'ecco/adapters/sports_illustrated.rb'
+require 'ecco/adapters/sport_allgemein.rb'
+require 'ecco/adapters/sport_ch.rb'
+require 'ecco/adapters/sky_sport.rb'
+require 'ecco/adapters/sport_express.rb'
+require 'ecco/adapters/japan_sport.rb'
+require 'ecco/adapters/expansion.rb'
+
 
 module Ecco
   # Your code goes here...

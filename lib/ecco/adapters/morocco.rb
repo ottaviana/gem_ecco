@@ -12,7 +12,7 @@ module Ecco
       return SiteData.new(
         newspaper: "Morocco World News",
         headline: article_block.css('a')[1].attr('title'),
-        description: full_article_page.css('.m_8015943910318745746gmail-MsoNoSpacing')[0].text,
+        description: full_article_page.css("div > p")[0].text,
         link: URI.parse(article_url),
         image_url: URI.parse(article_block.css('img')[0].attr('src')),
         article: full_article_page.css("div > p").text

@@ -15,7 +15,7 @@ module Ecco
         headline: article_block.css('.nmt-item__headline')[0].inner_text,
         description: article_block.css(".nmt-item__teaser")[0].inner_text,
         link: URI.parse(article_url),
-        image_url: URI.parse(article_block.css('img').first.attr('src')),
+        image_url: URI.parse(article_block.css('.nmt-item__image-wrapper img').first["data-src-320"].split("|")[0]),
         article: full_article_page.css("div > p").map { |n| "<p>" + n.text.strip() + "</p>" }.join
       )
     end

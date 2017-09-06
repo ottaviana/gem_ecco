@@ -357,4 +357,136 @@ module Ecco
       assert_kind_of String, site_data.article
     end
   end
+
+  def test_berlingske
+    crawler = Crawler.new(:berlingske)
+    site_data = crawler.crawl
+
+    assert_equal "Berlingske", site_data.newspaper
+    assert_kind_of Ecco::SiteData, site_data
+    assert_kind_of String, site_data.headline
+    assert_kind_of String, site_data.description
+    assert_kind_of URI, site_data.link
+    assert_kind_of URI, site_data.image_url
+    assert_kind_of String, site_data.article
+  end
+
+  def test_fakt
+    crawler = Crawler.new(:fakt)
+    site_data = crawler.crawl
+
+    assert_equal "Fakt", site_data.newspaper
+    assert_kind_of Ecco::SiteData, site_data
+    assert_kind_of String, site_data.headline
+    assert_kind_of String, site_data.description
+    assert_kind_of URI, site_data.link
+    assert_kind_of URI, site_data.image_url
+    assert_kind_of String, site_data.article
+  end
+
+
+  def test_adevarul
+    crawler = Crawler.new(:adevarul)
+    site_data = crawler.crawl
+
+    assert_equal "Adevarul", site_data.newspaper
+    assert_kind_of Ecco::SiteData, site_data
+    assert_kind_of String, site_data.headline
+    assert_kind_of String, site_data.description
+    assert_kind_of URI, site_data.link
+    assert_kind_of URI, site_data.image_url
+    assert_kind_of String, site_data.article
+  end
+
+  def test_sports_illustrated
+    crawler = Crawler.new(:sports_illustrated)
+    site_data = crawler.crawl
+
+    assert_equal "Sports Illustrated", site_data.newspaper
+    assert_kind_of Ecco::SiteData, site_data
+    assert_kind_of String, site_data.headline
+    assert_kind_of String, site_data.description
+    assert_kind_of URI, site_data.link
+    assert_kind_of URI, site_data.image_url
+    assert_kind_of String, site_data.article
+  end
+
+  def test_sport_allgemein
+    crawler = Crawler.new(:sport_allgemein)
+    site_data = crawler.crawl
+
+    assert_equal "Sport Allgemein", site_data.newspaper
+    assert_kind_of Ecco::SiteData, site_data
+    assert_kind_of String, site_data.headline
+    assert_kind_of String, site_data.description
+    assert_kind_of URI, site_data.link
+    assert_kind_of URI, site_data.image_url
+    assert_kind_of String, site_data.article
+  end
+
+  def test_sport_ch
+    crawler = Crawler.new(:sport_ch)
+    site_data = crawler.crawl
+
+    assert_equal "Sport.ch", site_data.newspaper
+    assert_kind_of Ecco::SiteData, site_data
+    assert_kind_of String, site_data.headline
+    assert_kind_of String, site_data.description
+    assert_kind_of URI, site_data.link
+    assert_kind_of URI, site_data.image_url
+    assert_kind_of String, site_data.article
+  end
+
+  def test_sky_sport
+    crawler = Crawler.new(:sky_sport)
+    site_data = crawler.crawl
+
+    assert_equal "Sky Sport", site_data.newspaper
+    assert_kind_of Ecco::SiteData, site_data
+    assert_kind_of String, site_data.headline
+    assert_kind_of String, site_data.description
+    assert_kind_of URI, site_data.link
+    assert_kind_of URI, site_data.image_url
+    assert_kind_of String, site_data.article
+  end
+
+  def test_sport_express
+    crawler = Crawler.new(:sport_express)
+    site_data = crawler.crawl
+
+    assert_equal "Sport Express", site_data.newspaper
+    assert_kind_of Ecco::SiteData, site_data
+    assert_kind_of String, site_data.headline
+    assert_kind_of String, site_data.description
+    assert_kind_of URI, site_data.link
+    assert_kind_of URI, site_data.image_url
+    assert_kind_of String, site_data.article
+  end
+
+  def test_japan_sport
+    crawler = Crawler.new(:japan_sport)
+    site_data = crawler.crawl
+
+    assert_equal "Japan Sport", site_data.newspaper
+    assert_kind_of Ecco::SiteData, site_data
+    assert_kind_of String, site_data.headline
+    assert_kind_of String, site_data.description
+    assert_kind_of URI, site_data.link
+    assert_kind_of URI, site_data.image_url
+    assert_kind_of String, site_data.article
+  end
+
+  def test_expansion
+    crawler = Crawler.new(:expansion)
+    site_data = crawler.crawl
+
+    assert_equal "Expansion", site_data.newspaper
+    assert_kind_of Ecco::SiteData, site_data
+    assert_kind_of String, site_data.headline
+    assert_kind_of String, site_data.description
+    assert_kind_of URI, site_data.link
+    assert_kind_of URI, site_data.image_url
+    assert_kind_of String, site_data.article
+  end
+
 end
