@@ -13,7 +13,7 @@ module Ecco
         headline: article_block.css("h2 span").first.text,
         description: full_article_page.css('.ctx_content').first.inner_text,
         link: URI.parse(root_uri + article_block.css('a').first.attr('href')),
-        image_url: URI.parse('http:'+ article_block.css('img').first.attr('src')),
+        image_url: URI.parse(article_block.css('img').first.attr('src')),
         article: full_article_page.css('.ctx_content').inner_text
       )
     end
