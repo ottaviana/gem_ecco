@@ -13,7 +13,7 @@ module Ecco
         headline: article_block.css('.df-fs-59').inner_text,
         description: full_article_page.css("p[itemprop=description]").text,
         link: URI.parse(article_url),
-        image_url: URI.parse(article_block.css('img').first.attr('src')),
+        image_url: URI.parse(article_block.css('.df-article-img').first.attr('src')),
         article: full_article_page.css("div[itemprop=articleBody]").text
       )
     end

@@ -1,8 +1,8 @@
 module Ecco
   class IndependentAdapter < Adapter
     def initialize
-      @root_uri = 'http://www.independent.ie'
-      @article_block = get_html(root_uri).css('.w31')
+      @root_uri = 'https://www.independent.ie/news/'
+      @article_block = get_html(root_uri).css('.w111')
       @article_url = article_block.css("article a").first.attr('href')
       @full_article_page = get_html(article_url)
     end
